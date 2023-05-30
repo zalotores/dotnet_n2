@@ -1,0 +1,8 @@
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\bin\Debug\EjemploHerencia2.exe.config
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\bin\Debug\EjemploHerencia2.exe
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\bin\Debug\EjemploHerencia2.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\obj\Debug\EjemploHerencia2.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\obj\Debug\EjemploHerencia2.csproj.SuggestedBindingRedirects.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\obj\Debug\EjemploHerencia2.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\obj\Debug\EjemploHerencia2.exe
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase3\Clase3\EjemploHerencia2\obj\Debug\EjemploHerencia2.pdb
