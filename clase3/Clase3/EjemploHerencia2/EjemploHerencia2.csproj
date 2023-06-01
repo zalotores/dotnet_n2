@@ -47,7 +47,10 @@
     <Compile Include="AutoDeportivo.cs" />
     <Compile Include="AutoUrbano.cs" />
     <Compile Include="Camioneta.cs" />
+    <Compile Include="Cargable.cs" />
+    <Compile Include="Chasis.cs" />
     <Compile Include="Moto.cs" />
+    <Compile Include="Motor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehiculo.cs" />
