@@ -61,7 +61,7 @@ namespace ejemplo1
             string colorFavorito = cboColor.SelectedItem.ToString();
             string numeroFavorito = numNumeroFavorito.Value.ToString();
 
-            MessageBox.Show("Nombre: " + nombre + "\nFecha: " + fecha + "\n" + chocolate + "\nEs " + tipo + "\nColor: " + colorFavorito + "\nNumero favorito: " + numeroFavorito);
+            MessageBox.Show("Nombre: " + nombre + "\nFecha: " + fecha.ToShortDateString() + "\n" + chocolate + "\nEs " + tipo + "\nColor: " + colorFavorito + "\nNumero favorito: " + numeroFavorito);
         }
     }
 }

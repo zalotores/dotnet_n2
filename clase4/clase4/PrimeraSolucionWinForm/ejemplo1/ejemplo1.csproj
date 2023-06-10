@@ -52,16 +52,43 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPractico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPractico.Designer.cs">
+      <DependentUpon>FormPractico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentanaDos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmVentanaDos.Designer.cs">
       <DependentUpon>frmVentanaDos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Practica5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Practica5.Designer.cs">
+      <DependentUpon>Practica5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPractico.resx">
+      <DependentUpon>FormPractico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Practica5.resx">
+      <DependentUpon>Practica5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

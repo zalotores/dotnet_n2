@@ -41,9 +41,9 @@
             this.ckbChocolate = new System.Windows.Forms.CheckBox();
             this.lblPerfil = new System.Windows.Forms.Label();
             this.gbxTipo = new System.Windows.Forms.GroupBox();
-            this.rbtWizard = new System.Windows.Forms.RadioButton();
-            this.rbtMuggle = new System.Windows.Forms.RadioButton();
             this.rbtSquibs = new System.Windows.Forms.RadioButton();
+            this.rbtMuggle = new System.Windows.Forms.RadioButton();
+            this.rbtWizard = new System.Windows.Forms.RadioButton();
             this.cboColor = new System.Windows.Forms.ComboBox();
             this.lblColor = new System.Windows.Forms.Label();
             this.numNumeroFavorito = new System.Windows.Forms.NumericUpDown();
@@ -89,10 +89,11 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAgregar.Location = new System.Drawing.Point(42, 336);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -102,10 +103,13 @@
             this.txtElementoNombre.Location = new System.Drawing.Point(127, 46);
             this.txtElementoNombre.Name = "txtElementoNombre";
             this.txtElementoNombre.Size = new System.Drawing.Size(200, 20);
-            this.txtElementoNombre.TabIndex = 5;
+            this.txtElementoNombre.TabIndex = 0;
             // 
             // lvElementos
             // 
+            this.lvElementos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lvElementos.HideSelection = false;
             this.lvElementos.Location = new System.Drawing.Point(42, 249);
             this.lvElementos.Name = "lvElementos";
@@ -137,7 +141,7 @@
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(127, 82);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaNacimiento.TabIndex = 9;
+            this.dtpFechaNacimiento.TabIndex = 1;
             // 
             // ckbChocolate
             // 
@@ -145,7 +149,7 @@
             this.ckbChocolate.Location = new System.Drawing.Point(127, 109);
             this.ckbChocolate.Name = "ckbChocolate";
             this.ckbChocolate.Size = new System.Drawing.Size(135, 17);
-            this.ckbChocolate.TabIndex = 10;
+            this.ckbChocolate.TabIndex = 3;
             this.ckbChocolate.Text = "Te gusta el chocolate?";
             this.ckbChocolate.UseVisualStyleBackColor = true;
             // 
@@ -168,9 +172,29 @@
             this.gbxTipo.Location = new System.Drawing.Point(372, 46);
             this.gbxTipo.Name = "gbxTipo";
             this.gbxTipo.Size = new System.Drawing.Size(116, 100);
-            this.gbxTipo.TabIndex = 12;
+            this.gbxTipo.TabIndex = 2;
             this.gbxTipo.TabStop = false;
             this.gbxTipo.Text = "Tipo";
+            // 
+            // rbtSquibs
+            // 
+            this.rbtSquibs.AutoSize = true;
+            this.rbtSquibs.Location = new System.Drawing.Point(16, 65);
+            this.rbtSquibs.Name = "rbtSquibs";
+            this.rbtSquibs.Size = new System.Drawing.Size(57, 17);
+            this.rbtSquibs.TabIndex = 2;
+            this.rbtSquibs.Text = "Squibs";
+            this.rbtSquibs.UseVisualStyleBackColor = true;
+            // 
+            // rbtMuggle
+            // 
+            this.rbtMuggle.AutoSize = true;
+            this.rbtMuggle.Location = new System.Drawing.Point(16, 42);
+            this.rbtMuggle.Name = "rbtMuggle";
+            this.rbtMuggle.Size = new System.Drawing.Size(60, 17);
+            this.rbtMuggle.TabIndex = 1;
+            this.rbtMuggle.Text = "Muggle";
+            this.rbtMuggle.UseVisualStyleBackColor = true;
             // 
             // rbtWizard
             // 
@@ -184,33 +208,13 @@
             this.rbtWizard.Text = "Wizard";
             this.rbtWizard.UseVisualStyleBackColor = true;
             // 
-            // rbtMuggle
-            // 
-            this.rbtMuggle.AutoSize = true;
-            this.rbtMuggle.Location = new System.Drawing.Point(16, 42);
-            this.rbtMuggle.Name = "rbtMuggle";
-            this.rbtMuggle.Size = new System.Drawing.Size(60, 17);
-            this.rbtMuggle.TabIndex = 1;
-            this.rbtMuggle.Text = "Muggle";
-            this.rbtMuggle.UseVisualStyleBackColor = true;
-            // 
-            // rbtSquibs
-            // 
-            this.rbtSquibs.AutoSize = true;
-            this.rbtSquibs.Location = new System.Drawing.Point(16, 65);
-            this.rbtSquibs.Name = "rbtSquibs";
-            this.rbtSquibs.Size = new System.Drawing.Size(57, 17);
-            this.rbtSquibs.TabIndex = 2;
-            this.rbtSquibs.Text = "Squibs";
-            this.rbtSquibs.UseVisualStyleBackColor = true;
-            // 
             // cboColor
             // 
             this.cboColor.FormattingEnabled = true;
             this.cboColor.Location = new System.Drawing.Point(127, 138);
             this.cboColor.Name = "cboColor";
             this.cboColor.Size = new System.Drawing.Size(200, 21);
-            this.cboColor.TabIndex = 13;
+            this.cboColor.TabIndex = 4;
             // 
             // lblColor
             // 
@@ -226,7 +230,7 @@
             this.numNumeroFavorito.Location = new System.Drawing.Point(127, 166);
             this.numNumeroFavorito.Name = "numNumeroFavorito";
             this.numNumeroFavorito.Size = new System.Drawing.Size(120, 20);
-            this.numNumeroFavorito.TabIndex = 15;
+            this.numNumeroFavorito.TabIndex = 5;
             // 
             // lblNumeroFavorito
             // 
@@ -251,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 374);
             this.Controls.Add(this.btnVerPerfil);
             this.Controls.Add(this.lblNumeroFavorito);
             this.Controls.Add(this.numNumeroFavorito);
@@ -270,8 +274,10 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnSaludar);
+            this.MinimumSize = new System.Drawing.Size(813, 413);
             this.Name = "Form1";
             this.Text = "Primera App";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxTipo.ResumeLayout(false);

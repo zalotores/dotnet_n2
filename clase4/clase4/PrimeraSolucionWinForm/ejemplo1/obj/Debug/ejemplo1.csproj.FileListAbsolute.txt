@@ -9,3 +9,6 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejempl
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.csproj.CoreCompileInputs.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.exe
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.frmPrincipal.resources
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.FormPractico.resources
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase4\clase4\PrimeraSolucionWinForm\ejemplo1\obj\Debug\ejemplo1.Practica5.resources
