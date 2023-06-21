@@ -1,0 +1,11 @@
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\bin\Debug\ejemplo1.exe.config
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\bin\Debug\ejemplo1.exe
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\bin\Debug\ejemplo1.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.csproj.SuggestedBindingRedirects.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.Form1.resources
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.Properties.Resources.resources
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.csproj.GenerateResource.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.exe
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplo1\obj\Debug\ejemplo1.pdb
