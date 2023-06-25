@@ -26,7 +26,9 @@ namespace ejemplosADO_NET
                 conn.ConnectionString = "server=" + servidor + "; database=" + db + "; integrated security = true";
 
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT Numero, Nombre, Descripcion FROM POKEMONS";
+                comando.CommandText = "SELECT P.Numero, Nombre, P.Descripcion, UrlImagen,"
+                    + " E.Descripcion AS Tipo, D.Descripcion AS Debilidad " 
+                    + "FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE P.IdTipo = E.Id AND D.Id = P.IdDebilidad";
                 comando.Connection = conn;
 
                 conn.Open();        //abro conexion
@@ -39,6 +41,15 @@ namespace ejemplosADO_NET
                     aux.Numero = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Descripcion = (string) lector["Descripcion"];       //otra forma de ponerlo con cast
+                    aux.UrlImagen = lector.GetString (3);
+                    aux.Tipo = new Elemento     //inicializo elemento nuevo con atributo leido
+                    {
+                        Descripcion = lector.GetString(4)
+                    };
+                    aux.Debilidad = new Elemento
+                    {
+                        Descripcion = lector.GetString(5)
+                    };
 
                     lista.Add(aux);
                 }
