@@ -1,0 +1,6 @@
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\bin\Debug\dominio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\bin\Debug\dominio.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\obj\Debug\dominio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\dominio\obj\Debug\dominio.pdb

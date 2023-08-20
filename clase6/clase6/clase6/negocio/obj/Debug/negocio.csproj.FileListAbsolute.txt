@@ -1,0 +1,9 @@
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\bin\Debug\negocio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\bin\Debug\negocio.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\bin\Debug\dominio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\bin\Debug\dominio.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\obj\Debug\negocio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\negocio\obj\Debug\negocio.pdb

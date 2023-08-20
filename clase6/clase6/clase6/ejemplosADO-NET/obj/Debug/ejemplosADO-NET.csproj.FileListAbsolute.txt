@@ -9,3 +9,8 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\De
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.CoreCompileInputs.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.exe
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\dominio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\dominio.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.CopyComplete
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.pdb

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejemplosADO_NET
+namespace dominio
 {
-    internal class Pokemon
+    public class Pokemon
     {
 
         public int Numero { get; set; }
