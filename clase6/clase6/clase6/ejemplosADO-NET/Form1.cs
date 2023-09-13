@@ -50,5 +50,19 @@ namespace ejemplosADO_NET
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormElementos))
+                {
+                    MessageBox.Show("Ya existe una ventana abierta!");
+                    return;
+                }
+            }
+            FormElementos ventanaElementos = new FormElementos();
+            ventanaElementos.Show();
+        }
     }
 }

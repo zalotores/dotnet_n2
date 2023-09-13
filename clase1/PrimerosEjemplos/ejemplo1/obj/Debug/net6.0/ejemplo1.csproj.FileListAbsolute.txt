@@ -3,7 +3,6 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\bin\Debug\
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\bin\Debug\net6.0\ejemplo1.runtimeconfig.json
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\bin\Debug\net6.0\ejemplo1.dll
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\bin\Debug\net6.0\ejemplo1.pdb
-C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\obj\Debug\net6.0\ejemplo1.csproj.AssemblyReference.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\obj\Debug\net6.0\ejemplo1.GeneratedMSBuildEditorConfig.editorconfig
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\obj\Debug\net6.0\ejemplo1.AssemblyInfoInputs.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase1\PrimerosEjemplos\ejemplo1\obj\Debug\net6.0\ejemplo1.AssemblyInfo.cs

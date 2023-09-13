@@ -30,6 +30,7 @@
         {
             this.dgvPokemons = new System.Windows.Forms.DataGridView();
             this.picbxPokemon = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbxPokemon)).BeginInit();
             this.SuspendLayout();
@@ -52,11 +53,22 @@
             this.picbxPokemon.TabIndex = 1;
             this.picbxPokemon.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(31, 270);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "elementos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmPokemons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 447);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.picbxPokemon);
             this.Controls.Add(this.dgvPokemons);
             this.Name = "frmPokemons";
@@ -72,6 +84,7 @@
 
         private System.Windows.Forms.DataGridView dgvPokemons;
         private System.Windows.Forms.PictureBox picbxPokemon;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -2,7 +2,6 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\De
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\ejemplosADO-NET.exe
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\ejemplosADO-NET.pdb
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.AssemblyReference.cache
-C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.SuggestedBindingRedirects.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO_NET.frmPokemons.resources
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO_NET.Properties.Resources.resources
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.GenerateResource.cache
@@ -14,3 +13,4 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\De
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO-NET.csproj.CopyComplete
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.dll
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO_NET.FormElementos.resources

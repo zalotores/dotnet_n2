@@ -2,7 +2,6 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\bin\Debug\ejemplo2.e
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\bin\Debug\ejemplo2.exe
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\bin\Debug\ejemplo2.pdb
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\obj\Debug\ejemplo2.csproj.AssemblyReference.cache
-C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\obj\Debug\ejemplo2.csproj.SuggestedBindingRedirects.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\obj\Debug\ejemplo2.csproj.CoreCompileInputs.cache
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\obj\Debug\ejemplo2.exe
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase2\Clase2\ejemplo2\obj\Debug\ejemplo2.pdb
