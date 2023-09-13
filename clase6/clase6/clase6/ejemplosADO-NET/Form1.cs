@@ -64,5 +64,11 @@ namespace ejemplosADO_NET
             FormElementos ventanaElementos = new FormElementos();
             ventanaElementos.Show();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAgregarPokemon alta = new frmAgregarPokemon();
+            alta.ShowDialog();
+        }
     }
 }

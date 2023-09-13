@@ -14,3 +14,4 @@ C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\De
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.dll
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\bin\Debug\negocio.pdb
 C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO_NET.FormElementos.resources
+C:\datos\zalo\cursos\MaxiPrograma\n2\clase6\clase6\clase6\ejemplosADO-NET\obj\Debug\ejemplosADO_NET.frmAgregarPokemon.resources

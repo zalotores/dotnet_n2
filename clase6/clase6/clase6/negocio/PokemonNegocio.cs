@@ -66,5 +66,23 @@ namespace negocio
 
         }
 
+        public void agregar(Pokemon p)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setConsulta("INSERT INTO POKEMONS (Numero, Nombre, Descripcion, Activo) values (" + p.Numero +", ' "+ p.Nombre + "', '" + p.Descripcion + "', 1);");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
     }
 }

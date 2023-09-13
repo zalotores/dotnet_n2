@@ -58,6 +58,12 @@
     <Compile Include="FormElementos.Designer.cs">
       <DependentUpon>FormElementos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarPokemon.Designer.cs">
+      <DependentUpon>frmAgregarPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormElementos.resx">
       <DependentUpon>FormElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPokemon.resx">
+      <DependentUpon>frmAgregarPokemon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
