@@ -42,7 +42,11 @@ namespace negocio
                     aux.Numero = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Descripcion = (string) lector["Descripcion"];       //otra forma de ponerlo con cast
-                    aux.UrlImagen = lector.GetString (3);
+
+                    //if(!lector.IsDBNull(lector.GetOrdinal("UrlImagen"))) esta es una forma
+                    //    aux.UrlImagen = lector.GetString (3);
+                    if (!(lector["UrlImagen"] is DBNull))
+                        aux.UrlImagen = lector.GetString(3);
                     aux.Tipo = new Elemento     //inicializo elemento nuevo con atributo leido
                     {
                         Descripcion = lector.GetString(4)
@@ -71,7 +75,10 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setConsulta("INSERT INTO POKEMONS (Numero, Nombre, Descripcion, Activo) values (" + p.Numero +", ' "+ p.Nombre + "', '" + p.Descripcion + "', 1);");
+                datos.setConsulta("INSERT INTO POKEMONS (Numero, Nombre, Descripcion, UrlImagen, IdTipo, IdDebilidad, Activo) values (" + p.Numero +", ' "+ p.Nombre + "', '" + p.Descripcion + "', @urlImagen, @idTipo, @idDebilidad, 1);");
+                datos.setearParametro("@idTipo", p.Tipo.id);
+                datos.setearParametro("@idDebilidad", p.Debilidad.id);
+                datos.setearParametro("@urlImagen", p.UrlImagen);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

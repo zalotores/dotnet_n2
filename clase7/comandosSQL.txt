@@ -1,0 +1,4 @@
+-- INSERT INTO POKEMONS (Numero, Nombre, Descripcion, Activo) values (999, 'prueba', 'prueba', 1)
+
+-- delete from POKEMONS where Numero = 999;
+SELECT * FROM POKEMONS;

@@ -22,18 +22,33 @@ namespace ejemplosADO_NET
 
         private void frmPokemons_Load(object sender, EventArgs e)
         {
-            PokemonNegocio negocio = new PokemonNegocio();
-            listaPokemons = negocio.listar();
-            dgvPokemons.DataSource = listaPokemons;
-            dgvPokemons.Columns["UrlImagen"].Visible = false;   
+            cargar();
 
-            cargarImagen(listaPokemons[0].UrlImagen);
         }
 
         private void dgvPokemons_SelectionChanged(object sender, EventArgs e)
         {
             Pokemon seleccionado = (Pokemon) dgvPokemons.CurrentRow.DataBoundItem;
             cargarImagen(seleccionado.UrlImagen);
+        }
+
+        private void cargar()
+        {
+            PokemonNegocio negocio = new PokemonNegocio();
+
+            try
+            {
+                listaPokemons = negocio.listar();
+                dgvPokemons.DataSource = listaPokemons;
+                dgvPokemons.Columns["UrlImagen"].Visible = false;
+
+                cargarImagen(listaPokemons[0].UrlImagen);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void cargarImagen (string imagen)
@@ -69,6 +84,7 @@ namespace ejemplosADO_NET
         {
             frmAgregarPokemon alta = new frmAgregarPokemon();
             alta.ShowDialog();
+            cargar();
         }
     }
 }
