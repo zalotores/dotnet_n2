@@ -14,9 +14,17 @@ namespace ejemplosADO_NET
 {
     public partial class frmAgregarPokemon : Form
     {
+        private Pokemon pokemon = null;
         public frmAgregarPokemon()
         {
             InitializeComponent();
+        }
+
+        public frmAgregarPokemon(Pokemon pokemon)
+        {
+            InitializeComponent();
+            this.pokemon = pokemon;
+            Text = "Modificar Pokemon";
         }
 
         private void btnCancelarPokemon_Click(object sender, EventArgs e)
@@ -26,11 +34,13 @@ namespace ejemplosADO_NET
 
         private void btnAceptarPokemon_Click(object sender, EventArgs e)
         {
-            Pokemon pokemon = new Pokemon();
+            
             PokemonNegocio negocio = new PokemonNegocio();
 
             try
             {
+                if (pokemon == null) 
+                    pokemon = new Pokemon();
                 pokemon.Numero = int.Parse(txtNumero.Text);
                 pokemon.Nombre = txtNombre.Text;
                 pokemon.Descripcion = txtDescripcion.Text;
@@ -38,8 +48,17 @@ namespace ejemplosADO_NET
                 pokemon.Tipo = (Elemento) cboTipo.SelectedItem;
                 pokemon.Debilidad = (Elemento) cboDebilidad.SelectedItem;
 
-                negocio.agregar(pokemon);
-                MessageBox.Show("Agregado exitosamente!");
+                if(pokemon.Id !=  0)
+                {
+                    negocio.modificar(pokemon);
+                    MessageBox.Show("Modificado exitosamente!");
+                }
+                else
+                {
+                    negocio.agregar(pokemon);
+                    MessageBox.Show("Agregado exitosamente!");
+                }
+
                 Close();
             }
             catch (Exception ex) 
@@ -55,7 +74,22 @@ namespace ejemplosADO_NET
             try
             {
                 cboTipo.DataSource = elementoNegocio.listar();
+                cboTipo.ValueMember = "Id";
+                cboTipo.DisplayMember = "Descripcion";
                 cboDebilidad.DataSource = elementoNegocio.listar();
+                cboDebilidad.ValueMember = "Id";
+                cboDebilidad.DisplayMember = "Descripcion";
+
+                if (pokemon != null)
+                {
+                    txtNumero.Text = pokemon.Numero.ToString();
+                    txtNombre.Text = pokemon.Nombre;
+                    txtDescripcion.Text = pokemon.Descripcion;
+                    txtUrlImagen.Text = pokemon.UrlImagen;
+                    cargarImagen(pokemon.UrlImagen);
+                    cboTipo.SelectedValue = pokemon.Tipo.id;
+                    cboDebilidad.SelectedValue = pokemon.Debilidad.id;
+                }
             }
             catch(Exception ex)
             {
@@ -74,7 +108,7 @@ namespace ejemplosADO_NET
             {
                 pbxPokemon.Load(imagen);
             }
-            catch (Exception e)
+            catch
             {
                 //imagen por defecto en caso de no tener en la base
 

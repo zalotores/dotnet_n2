@@ -40,6 +40,7 @@ namespace ejemplosADO_NET
             {
                 listaPokemons = negocio.listar();
                 dgvPokemons.DataSource = listaPokemons;
+                dgvPokemons.Columns["Id"].Visible = false;
                 dgvPokemons.Columns["UrlImagen"].Visible = false;
 
                 cargarImagen(listaPokemons[0].UrlImagen);
@@ -57,7 +58,7 @@ namespace ejemplosADO_NET
             {
                 picbxPokemon.Load(imagen);
             }
-            catch (Exception e)
+            catch
             {
                 //imagen por defecto en caso de no tener en la base
 
@@ -84,6 +85,14 @@ namespace ejemplosADO_NET
         {
             frmAgregarPokemon alta = new frmAgregarPokemon();
             alta.ShowDialog();
+            cargar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Pokemon seleccionado = (Pokemon) dgvPokemons.CurrentRow.DataBoundItem;
+            frmAgregarPokemon modificar = new frmAgregarPokemon(seleccionado);
+            modificar.ShowDialog();
             cargar();
         }
     }

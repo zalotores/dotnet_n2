@@ -27,9 +27,10 @@ namespace negocio
                 conn.ConnectionString = "server=" + servidor + "; database=" + db + "; integrated security = true";
 
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT P.Numero, Nombre, P.Descripcion, UrlImagen,"
-                    + " E.Descripcion AS Tipo, D.Descripcion AS Debilidad " 
-                    + "FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE P.IdTipo = E.Id AND D.Id = P.IdDebilidad";
+                comando.CommandText = "SELECT P.Numero, Nombre, P.Descripcion, UrlImagen, "
+                    + "E.Descripcion AS Tipo, D.Descripcion AS Debilidad, P.IdTipo, P.IdDebilidad, P.Id "
+                    + "FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE P.IdTipo = E.Id AND "
+                    + "D.Id = P.IdDebilidad;";
                 comando.Connection = conn;
 
                 conn.Open();        //abro conexion
@@ -39,6 +40,7 @@ namespace negocio
                 while (lector.Read()) 
                 {
                     Pokemon aux = new Pokemon();
+                    aux.Id = (int)lector["Id"];
                     aux.Numero = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Descripcion = (string) lector["Descripcion"];       //otra forma de ponerlo con cast
@@ -51,10 +53,12 @@ namespace negocio
                     {
                         Descripcion = lector.GetString(4)
                     };
+                    aux.Tipo.id = (int) lector["IdTipo"];
                     aux.Debilidad = new Elemento
                     {
                         Descripcion = lector.GetString(5)
                     };
+                    aux.Debilidad.id = (int)lector["IdDebilidad"];
 
                     lista.Add(aux);
                 }
@@ -88,6 +92,33 @@ namespace negocio
             finally
             {
                 datos.cerrarConexion();
+            }
+        }
+
+        public void modificar (Pokemon p)
+        {
+            AccesoDatos datos = new AccesoDatos ();
+            try
+            {
+                datos.setConsulta("UPDATE POKEMONS SET Numero = @numero, Nombre = @nombre, Descripcion = @descripcion, UrlImagen = @urlImagen, IdTipo = @idTipo, IdDebilidad = @idDebilidad WHERE Id = @id;");
+                datos.setearParametro("@numero", p.Numero);
+                datos.setearParametro("@nombre", p.Nombre);
+                datos.setearParametro("@descripcion", p.Descripcion);
+                datos.setearParametro("@urlImagen", p.UrlImagen);
+                datos.setearParametro("@idTipo", p.Tipo.id);
+                datos.setearParametro("@idDebilidad", p.Debilidad.id);
+                datos.setearParametro("@id", p.Id);
+
+                datos.ejecutarAccion ();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion ();
             }
         }
 
