@@ -28,8 +28,11 @@ namespace ejemplosADO_NET
 
         private void dgvPokemons_SelectionChanged(object sender, EventArgs e)
         {
-            Pokemon seleccionado = (Pokemon) dgvPokemons.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.UrlImagen);
+            if (dgvPokemons.CurrentRow != null)
+            {
+                Pokemon seleccionado = (Pokemon)dgvPokemons.CurrentRow.DataBoundItem;
+                cargarImagen(seleccionado.UrlImagen);
+            }
         }
 
         private void cargar()
@@ -40,9 +43,7 @@ namespace ejemplosADO_NET
             {
                 listaPokemons = negocio.listar();
                 dgvPokemons.DataSource = listaPokemons;
-                dgvPokemons.Columns["Id"].Visible = false;
-                dgvPokemons.Columns["UrlImagen"].Visible = false;
-
+                ocultarColumnas();
                 cargarImagen(listaPokemons[0].UrlImagen);
 
             }
@@ -50,6 +51,12 @@ namespace ejemplosADO_NET
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void ocultarColumnas ()
+        {
+            dgvPokemons.Columns["Id"].Visible = false;
+            dgvPokemons.Columns["UrlImagen"].Visible = false;
         }
 
         private void cargarImagen (string imagen)
@@ -132,6 +139,32 @@ namespace ejemplosADO_NET
                 MessageBox.Show(ex.ToString());
             }
 
+        }
+
+        private void btnFiltro_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            List<Pokemon> listaFiltrada;
+
+            string filtro = txtFiltro.Text.Trim().ToLower();
+
+            if (filtro.Length > 2)
+            {
+                listaFiltrada = listaPokemons.FindAll(p => p.Nombre.Trim().ToLower().Contains(filtro));
+
+            }
+            else
+            {
+                listaFiltrada = listaPokemons;
+            }
+
+            dgvPokemons.DataSource = null;
+            dgvPokemons.DataSource = listaFiltrada;
+            ocultarColumnas();
         }
     }
 }
