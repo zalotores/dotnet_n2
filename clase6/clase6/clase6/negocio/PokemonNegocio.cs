@@ -30,7 +30,7 @@ namespace negocio
                 comando.CommandText = "SELECT P.Numero, Nombre, P.Descripcion, UrlImagen, "
                     + "E.Descripcion AS Tipo, D.Descripcion AS Debilidad, P.IdTipo, P.IdDebilidad, P.Id "
                     + "FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE P.IdTipo = E.Id AND "
-                    + "D.Id = P.IdDebilidad;";
+                    + "D.Id = P.IdDebilidad AND P.Activo = 1;";
                 comando.Connection = conn;
 
                 conn.Open();        //abro conexion
@@ -135,6 +135,25 @@ namespace negocio
             catch (Exception ex)
             {
 
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void eliminarLogico (int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setConsulta("UPDATE POKEMONS SET Activo = 0 WHERE Id = @Id;");
+                datos.setearParametro("@Id", id);
+                datos.ejecutarAccion();
+            }
+            catch(Exception ex)
+            {
                 throw ex;
             }
             finally
