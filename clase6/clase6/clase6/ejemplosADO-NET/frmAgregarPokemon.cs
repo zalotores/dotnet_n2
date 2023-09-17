@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dominio;
 using negocio;
+using System.Configuration;
 
 namespace ejemplosADO_NET
 {
     public partial class frmAgregarPokemon : Form
     {
         private Pokemon pokemon = null;
+        OpenFileDialog archivo = null;
         public frmAgregarPokemon()
         {
             InitializeComponent();
@@ -48,7 +51,14 @@ namespace ejemplosADO_NET
                 pokemon.Tipo = (Elemento) cboTipo.SelectedItem;
                 pokemon.Debilidad = (Elemento) cboDebilidad.SelectedItem;
 
-                if(pokemon.Id !=  0)
+                //guardo imagen si la levanto localmente
+                if ((archivo != null) && !(txtUrlImagen.Text.ToLower().Contains("http")))
+                {
+                    File.Copy(archivo.FileName, ConfigurationManager.AppSettings["carpetaImagenes"] + archivo.SafeFileName);
+                }
+
+
+                if (pokemon.Id !=  0)
                 {
                     negocio.modificar(pokemon);
                     MessageBox.Show("Modificado exitosamente!");
@@ -59,6 +69,7 @@ namespace ejemplosADO_NET
                     MessageBox.Show("Agregado exitosamente!");
                 }
 
+                
                 Close();
             }
             catch (Exception ex) 
@@ -113,6 +124,21 @@ namespace ejemplosADO_NET
                 //imagen por defecto en caso de no tener en la base
 
                 pbxPokemon.Load("https://www.vhv.rs/dpng/d/591-5916931_question-questionmark-missingno-nodata-placeholder-pokemon-question-mark.png");
+
+            }
+        }
+
+        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            archivo = new OpenFileDialog();
+            archivo.Filter = "jpg|*.jpg | png|*png";
+            if (archivo.ShowDialog()  == DialogResult.OK)
+            {
+                txtUrlImagen.Text = archivo.FileName;
+                cargarImagen(archivo.FileName);
+
+                //guardar la imagen using Sistem.IO
+                //File.Copy(archivo.FileName, ConfigurationManager.AppSettings["carpetaImagenes"] + archivo.SafeFileName);
 
             }
         }
