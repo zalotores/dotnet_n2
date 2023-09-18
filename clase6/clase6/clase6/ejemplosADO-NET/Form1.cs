@@ -143,11 +143,42 @@ namespace ejemplosADO_NET
 
         }
 
+        private bool validarFiltro()
+        {
+            if (cboCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione campo!");
+                return true;
+            }
+            if (cboCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione criterio!");
+                return true;
+            }
+            if ((cboCampo.SelectedItem.ToString() == "Número") && !(soloNumeros(txtFiltroAvanzado.Text)))
+            {
+                MessageBox.Show("Sólo admite números.");
+                return true;
+            }
+                
+
+            return false;
+        }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char c in cadena.ToCharArray())
+            { if (!(char.IsNumber(c))) return false;}
+            return true;
+        }
+
         private void btnFiltro_Click(object sender, EventArgs e)
         {
             PokemonNegocio negocio = new PokemonNegocio();
             try
             {
+                if (validarFiltro())
+                    return;
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txtFiltroAvanzado.Text;
