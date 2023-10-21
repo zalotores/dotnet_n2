@@ -1,0 +1,12 @@
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\bin\Debug\DataBase.dll
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\bin\Debug\DataBase.pdb
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.dll
+C:\datos\zalo\cursos\MaxiPrograma\finalN2\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\bin\Debug\DataBase.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\bin\Debug\DataBase.pdb
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.dll
+C:\datos\zalo\cursos\MaxiPrograma\n2\TPIntegrador\TPFinalNivel2_Torres\DataBase\obj\Debug\DataBase.pdb
